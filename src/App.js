@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Checkbox from './component/Checkbox.tsx';
+import Input from './component/Input.tsx';
+import Counter from './component/Counter.tsx';
+import SelectedItem from './component/SelectedItem.tsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Checkbox id="cbSi" title="Si" />
+      <Checkbox id="cbEsMiPadre" title="Es mi padre" />
+
+      <Input id="txtNombre" title="Nombre completo" />
+
+      <Counter id="txtPartoNatural" title="Parto natural"/>
+
+      <SelectedItem title="Mano" subtitle=""/>
+
+      <SelectedItem title="Corazón" subtitle="Mayo 2008"/>
+    </>
   );
 }
 
