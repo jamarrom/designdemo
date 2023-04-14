@@ -8,9 +8,9 @@ const SelectedItem:React.FC<{title:string, subtitle:string}> = ({title,subtitle}
       <div className="SelectedItem">
         {title}
         
-        <p className={subtitle==''?'u-ocultar':''}>{subtitle}</p>
+        <p className={subtitle===''?'u-ocultar':''}>{subtitle}</p>
 
-        <span className={subtitle==''?'icon-IcoBorrar':'icon-IcoBorrar Ajuste'}></span>
+        <span className={subtitle===''?'icon-IcoBorrar':'icon-IcoBorrar Ajuste'}></span>
       </div>
     </div>
   )
