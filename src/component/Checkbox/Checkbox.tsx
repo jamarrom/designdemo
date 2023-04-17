@@ -1,4 +1,5 @@
 import React from "react";
+import './Checkbox.css';
 
 const Checkbox:React.FC<{id:string, title:string}> = ({id,title}) => {
   return(
@@ -8,7 +9,7 @@ const Checkbox:React.FC<{id:string, title:string}> = ({id,title}) => {
         name={id}
         type="checkbox"
       />
-      <label className='lbCheckbox u-inline-block' htmlFor={id}>{title}</label>
+      <label className='lbCheckbox' htmlFor={id}>{title}</label>
     </div>
   )
 }

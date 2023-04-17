@@ -1,14 +1,13 @@
 import React from "react";
-
-
+import './SelectedItem.css';
 
 const SelectedItem:React.FC<{title:string, subtitle:string}> = ({title,subtitle}) => {
   return(
     <div className="ContentSelectedItem u-textCenter">
       <div className="SelectedItem">
         {title}
-        
-        <p className={subtitle===''?'u-ocultar':''}>{subtitle}</p>
+
+        {subtitle ? <p>{subtitle}</p> : null}
 
         <span className={subtitle===''?'icon-IcoBorrar':'icon-IcoBorrar Ajuste'}></span>
       </div>

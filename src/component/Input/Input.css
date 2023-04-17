@@ -1,0 +1,55 @@
+
+
+label
+{
+ 	text-decoration: none;
+ 	-webkit-transition: all 300ms ease-out;
+ 	-moz-transition: all 300ms ease-out;
+ 	-ms-transition: all 300ms ease-out;
+ 	-o-transition: all 300ms ease-out;
+ 	transition: all 300ms ease-out;
+}
+
+.ContentInput {
+  margin-top: 15px;
+}
+
+.ContentInput div {
+  display: inline-block;
+  width: 98%;
+  background: #fff;
+  padding-top: 16px;
+  position: relative;
+}
+
+.ContentInput label {
+  color: #9A9CA1;
+  font: 16px 'Poppins';
+  line-height: 16px;
+  position: absolute;
+  top: 26px;
+  left: 15px;
+  z-index: 1;
+}
+
+.ContentInput label.selected {
+  color: #000;
+  font-size: 12px;
+  top: 10px;
+}
+
+.ContentInput input {
+  width: 100%;
+  height: 40px;
+  font: 16px 'Poppins';
+  line-height: 16px;
+  border: 0px;
+  border-bottom: 1px solid #191919;
+  padding-left: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.ContentInput input:focus {
+ outline: none;
+}

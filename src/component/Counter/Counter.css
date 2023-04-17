@@ -1,0 +1,27 @@
+.Counter {
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+.Counter h2 {
+  font: 20px 'Poppins';
+  line-height: 20px;
+}
+
+.Counter span {
+  display: inline-block;
+  width: 75px;
+  font: 20px 'Poppins';
+  line-height: 20px;
+  vertical-align: super;
+}
+
+.Counter button {
+  color: #fff;
+  font: 35px 'Poppins';
+  line-height: 23px;
+  background: #2A2D82;
+  border: 0px;
+  border-radius: 8px;
+  padding: 8px;
+}

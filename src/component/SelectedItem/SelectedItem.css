@@ -1,0 +1,36 @@
+.ContentSelectedItem {
+  margin-top: 20px;
+}
+
+.SelectedItem {
+  display: inline-block;
+  width: 98%;
+  font: 16px 'Poppins';
+  line-height: 24px;
+  text-align: left;
+  background: #fff;
+  border: 2px solid #2A2D82;
+  border-radius: 8px;
+  padding: 5px 0px;
+  padding-left: 16px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.SelectedItem p {
+  color: #9A9CA1;
+  margin: 0px;
+  margin-bottom: 2px;
+}
+
+.SelectedItem .icon-IcoBorrar {
+  font-size: 22px;
+  position: absolute;
+  top: 20%;
+  right: 10px;;
+}
+
+.SelectedItem .icon-IcoBorrar.Ajuste {
+  top: 30%;
+}

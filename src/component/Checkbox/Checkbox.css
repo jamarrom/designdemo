@@ -1,0 +1,83 @@
+input[type="radio"], input[type=checkbox] 
+{
+	display: none;
+  width: auto;
+  height: auto;
+}
+
+input[type="checkbox"]
+{
+	width: auto;
+	height: auto;
+	margin: 0px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+label.lbCheckbox
+{
+	display: inline-block;
+  width: 98%;
+  color: #454545;
+  text-align: left;
+  font: 16px 'Poppins';
+  background: #fff;
+  border: 2px solid #2A2D82;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  padding-left: 42px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+label.lbCheckbox:before 
+{
+  content: "\2713";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  left: 14px;
+  top: 12px;
+  background-color: #9A9CA1;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  vertical-align: top;
+  position: absolute;
+}
+
+input[type=radio]:checked + label.lbRadio:before 
+{
+	content: "\2022";
+	color: #f4f585;
+	background-color: #f4f585;
+  font-size: 18px;
+  text-align: center;
+	line-height: 10px;
+	-webkit-box-shadow: 0px 0px 14px rgba(244,245,133,0.90);
+	-moz-box-shadow: 0px 0px 14px rgba(244,245,133,0.90);
+	-o-box-shadow: 0px 0px 14px rgba(244,245,133,0.90);
+	-ms-box-shadow: 0px 0px 14px rgba(244,245,133,0.90);
+	box-shadow: 0px 0px 14px rgba(244,245,133,0.90);
+}
+
+
+input[type=radio]:checked + label.lbRadio.lbRadioCalendar:before  
+{
+	color: #ecd695;
+	background-color: #ecd695;
+}
+
+input[type=checkbox]:checked + label.lbCheckbox:before 
+{
+  content: "\2713";
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #2A2D82;
+}
